@@ -19,7 +19,7 @@
 
 #import "FFmpegKitFlutterPlugin.h"
 
-#import <ffmpegkit/FFmpegKitConfig.h>
+#import "ffmpegkit/FFmpegKitConfig.h"
 
 static NSString *const PLATFORM_NAME = @"ios";
 

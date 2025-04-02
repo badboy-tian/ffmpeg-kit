@@ -20,10 +20,7 @@ Pod::Spec.new do |s|
   s.dependency          'Flutter'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
-  s.default_subspec = 'ffmpeg_kit_ios_local'
- s.subspec 'ffmpeg_kit_ios_local' do |ss|
-     ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-audio/ffmpegkit.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libavdevice.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libavcodec.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libavfilter.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libavformat.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libavutil.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libswresample.xcframework', 'Frameworks/ffmpeg-kit-ios-audio/libswscale.xcframework'
- end
+  s.default_subspec = 'audio'
 
   s.subspec 'min' do |ss|
     ss.source_files         = 'Classes/**/*'
