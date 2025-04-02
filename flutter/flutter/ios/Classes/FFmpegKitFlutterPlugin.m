@@ -19,7 +19,12 @@
 
 #import "FFmpegKitFlutterPlugin.h"
 
-#import "ffmpegkit/FFmpegKitConfig.h"
+// 尝试这些导入方式（一次只使用一种）
+#import <ffmpegkit/FFmpegKitConfig.h>
+// 或
+#import "ffmpegkit.h"
+// 或
+#import <ffmpegkit.h>
 
 static NSString *const PLATFORM_NAME = @"ios";
 
