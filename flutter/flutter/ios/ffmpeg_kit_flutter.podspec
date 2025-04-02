@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
   s.subspec 'https' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
-    ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-https/ffmpegkit.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavdevice.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavcodec.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavfilter.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavformat.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavutil.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libswresample.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libswscale.xcframework'
+    #ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-https/ffmpegkit.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavdevice.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavcodec.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavfilter.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavformat.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libavutil.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libswresample.xcframework', 'Frameworks/ffmpeg-kit-ios-https/libswscale.xcframework'
     ss.ios.deployment_target = '12.1'
   end
 
